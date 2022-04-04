@@ -55,4 +55,5 @@ function max_sub_array_ofsize_k(k, arr) {
 	return maxSum;
 }
 
+console.log(Math.max(-2, -2 + -3));
 console.log(max_sub_array_ofsize_k(2, [2, 3, 4, 1, 5]));
