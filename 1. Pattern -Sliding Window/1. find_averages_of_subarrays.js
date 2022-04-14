@@ -20,21 +20,6 @@ Here is the final output containing the averages of all subarrays of size 5:
 Output: [2.2, 2.8, 2.4, 3.6, 2.8]
 A brute-force algorithm will calculate the sum of every 5-element subarray of the given array and divide the sum by ‘5’ to find the average. This is what the algorithm will look like: */
 
-//Brute Force solution
-/* function find_averages_of_subarrays(k, arr) {
-	const result = [];
-	for (let i = 0; i < arr.length - k + 1; i++) {
-		//find sum of "k" elements
-		let sum = 0.0;
-		for (let j = i; j < i + k; j++) {
-			sum += arr[j];
-		}
-		//calculate average
-		result.push(sum / k);
-	}
-	return result;
-} */
-
 //Sliding window soluition
 function find_averages_of_subarrays(k, arr) {
 	const result = [];
